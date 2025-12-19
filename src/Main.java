@@ -24,6 +24,40 @@ public class Main {
         System.out.println("Задача №2");
         clientOS = 1;
         short clientDeviceYear = 2015;
-        if (clientOS == 1 && clientDeviceYear == 2015)
+        if (clientDeviceYear < 2015) {
+            switch (clientOS) {
+                case 0: {
+                    System.out.println("Установите версию приложения для iOS по ссылке");
+                    break;
+                }
+                case 1: {
+                    System.out.println("Установите версию приложения для Android по ссылке");
+                    break;
+                }
+            }
+        }
+        else
+        {
+            switch (clientOS)
+            {
+                case 0:
+                {
+                    System.out.println("Установите версию приложения для iOS по ссылке");
+                    break;
+                }
+                case 1:
+                {
+                    System.out.println("Установите версию приложения для Android по ссылке");
+                    break;
+                }
+            }
+        }
+
+        System.out.println();
+
+        System.out.println("Задача №3");
+        int creatLeapYear = 1554;
+        int year = 2000;
+        if
     }
 }
