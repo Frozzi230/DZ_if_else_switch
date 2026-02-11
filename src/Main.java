@@ -4,44 +4,26 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Задача №1");
         int clientOS = 0;
-        switch (clientOS) {
-            case 0: {
-                System.out.println("Установите версию приложения для iOS по ссылке");
-                break;
-            }
-            case 1: {
-                System.out.println("Установите версию приложения для Android по ссылке");
-                break;
-            }
-        }
+        if (clientOS == 0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        } else
+            System.out.println("Установите версию приложения для Android по ссылке");
 
         System.out.println();
 
         System.out.println("Задача №2");
         clientOS = 1;
-        short clientDeviceYear = 2015;
+        short clientDeviceYear = 2004;
         if (clientDeviceYear < 2015) {
-            switch (clientOS) {
-                case 0: {
-                    System.out.println("Установите версию приложения для iOS по ссылке");
-                    break;
-                }
-                case 1: {
-                    System.out.println("Установите версию приложения для Android по ссылке");
-                    break;
-                }
-            }
+            if (clientOS == 0)
+                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+            else
+                System.out.println("Установите облегченную версию приложения для Android по ссылке");
         } else {
-            switch (clientOS) {
-                case 0: {
-                    System.out.println("Установите версию приложения для iOS по ссылке");
-                    break;
-                }
-                case 1: {
-                    System.out.println("Установите версию приложения для Android по ссылке");
-                    break;
-                }
-            }
+            if (clientOS == 0)
+                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+            else
+                System.out.println("Установите облегченную версию приложения для Android по ссылке");
         }
 
         System.out.println();
@@ -77,32 +59,18 @@ public class Main {
         System.out.println("Задача 5");
         int monthNumber = 12;
         switch (monthNumber) {
-            case 1:
-                System.out.println("1-й месяц (январь) принадлежит к сезону зима");break;
-
-            case 2:
-                System.out.println("2-й месяц (февраль) принадлежит к сезону зима");break;
-
-            case 3:
-                System.out.println("3-й месяц (март) принадлежит к сезону весна");break;
-            case 4:
-                System.out.println("4-й месяц (апрель) принадлежит к сезону весна");break;
-            case 5:
-                System.out.println("5-й месяц (май) принадлежит к сезону весна");break;
-            case 6:
-                System.out.println("6-й месяц (июнь) принадлежит к сезону лето");break;
-            case 7:
-                System.out.println("7-й месяц (июль) принадлежит к сезону лето");break;
-            case 8:
-                System.out.println("8-й месяц (август) принадлежит к сезону лето");break;
-            case 9:
-                System.out.println("9-й месяц (сентябрь) принадлежит к сезону осень");break;
-            case 10:
-                System.out.println("10-й месяц (октябрь) принадлежит к сезону осень");break;
-            case 11:
-                System.out.println("11-й месяц (ноябрь) принадлежит к сезону осень");break;
-            case 12:
-                System.out.println("12-й месяц (декабрь) принадлежит к сезону зима");break;
+            case 1, 2, 12:
+                System.out.println("Месяц принадлежит к сезону зима");
+                break;
+            case 3, 4, 5:
+                System.out.println("Месяц принадлежит к сезону весна");
+                break;
+            case 6, 7, 8:
+                System.out.println("Месяц принадлежит к сезону лето");
+                break;
+            case 9, 10, 11:
+                System.out.println("Месяц принадлежит к сезону осень");
+                break;
             default:
                 break;
         }
