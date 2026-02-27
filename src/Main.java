@@ -14,16 +14,17 @@ public class Main {
         System.out.println("Задача №2");
         clientOS = 1;
         short clientDeviceYear = 2004;
+
         if (clientDeviceYear < 2015) {
-            if (clientOS == 0)
-                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-            else
-                System.out.println("Установите облегченную версию приложения для Android по ссылке");
+            System.out.print("Установите облегченную версию приложения ");
         } else {
-            if (clientOS == 0)
-                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-            else
-                System.out.println("Установите облегченную версию приложения для Android по ссылке");
+            System.out.print("Установите версию приложения ");
+        }
+
+        if (clientOS == 0) {
+            System.out.println("для iOS по ссылке");
+        } else {
+            System.out.println("для Android по ссылке");
         }
 
         System.out.println();
